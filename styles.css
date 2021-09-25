@@ -1,0 +1,132 @@
+/*
+    Desarrollo Movil
+*/
+
+/*
+    Reiniciando valores navegador por Defecto
+*/
+
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+ /*Logo*/
+ .header{
+    background-color: #0B4A75;
+}
+
+.header .nav{
+    display: flex;;
+}
+
+.header .nav >div.logo{
+    margin: 5px 10px;
+    width: 20%;
+}
+
+.header .nav >div.cont-redes{
+    width: 80%;
+}
+
+.header  .logoUts{
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Redes sociales*/
+
+.header .cont-redes > p{
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+
+.header .nav .redesSociales ul{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.header .redesSociales ul li i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.header .redesSociales ul li i:hover{
+    color: #CAD225;
+    font-size: 1.1em;
+}
+
+
+
+
+/* Version Tablet Horizontal */
+
+@media only screen and (min-width: 768px) {
+
+    .header  .logoUts{
+        width: 75%;
+    }
+    
+
+}
+
+/* escritorio*/
+
+@media only screen and (min-width: 992px) {
+
+    .header  .logoUts{
+        width: 50%;
+    }
+
+    /*Redes sociales*/
+
+    .header .cont-redes > p{
+        font-size: 1.3em;
+    }
+
+    .header .nav .redesSociales ul{
+        width: 40%;
+    }
+
+    .header .redesSociales ul li i{
+        font-size: 1.3em;
+    }
+    
+    .header .redesSociales ul li i:hover{
+        font-size: 1.5em;
+    }
+
+}
+
+/* Version Pantallas Grandes mas de 1500px */
+
+@media only screen and (min-width: 1472px) {
+
+    /*Redes sociales*/
+
+    .header .cont-redes > p{
+        font-size: 2.1em;
+    }
+
+    .header .redesSociales ul li i{
+        font-size: 2.5em;
+    }
+    
+    .header .redesSociales ul li i:hover{
+        font-size: 3em;
+    }
+
+
+
+}

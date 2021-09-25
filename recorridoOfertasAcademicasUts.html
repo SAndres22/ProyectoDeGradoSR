@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Recorrido virtual ofertas academicas UTS</title>
+
+	<!--HTML Personalizado-->
+
+	<!--Linkeando Font-awesome-Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="icon" href="media/icono.png" />
+	<!--Link google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+	<!--Linkeando Mis estilos CSS-->
+	<link rel="stylesheet" href="styles.css">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<style type="text/css" title="Default">
+		/* fullscreen */
+		html {
+			height: 100%;
+		}
+
+		body {
+			height: 100%;
+			margin: 0px;
+			overflow: hidden;
+			/* disable scrollbars */
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			/* remove highlight on tab for iOS/Android */
+		}
+
+		/* fix for scroll bars on webkit & >=Mac OS X Lion */
+		::-webkit-scrollbar {
+			background-color: rgba(0, 0, 0, 0.5);
+			width: 0.75em;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+	</style>
+</head>
+
+<body>
+	<!--Mi HTML-->
+
+	<header class="header">
+		<nav class="nav">
+			<div class="logo">
+				<a href="https://www.uts.edu.co/sitio/" target="blank">
+					<img class="logoUts" src="media/Logo-UTS-1.png">
+				</a>
+			</div>
+
+			<div class="cont-redes">
+				<p class="">Visita nuestras redes sociales</p>
+				<div class="redesSociales">
+					<ul>
+						<li>
+							<a target="blank"
+								href="https://www.facebook.com/UnidadesTecnologicasdeSantanderUTS/?epa=SEARCH_BOX"><i
+									class="fab fa-facebook-square"></i></a>
+						</li>
+						<li>
+							<a target="blank" href="https://twitter.com/Unidades_UTS"><i
+									class="fab fa-twitter-square"></i></a>
+						</li>
+						<li>
+							<a target="blank" href="https://www.youtube.com/channel/UC-rIi4OnN0R10Wp-cPiLcpQ"><i
+									class="fab fa-youtube-square"></i></a>
+						</li>
+						<li>
+							<a target="blank" href="https://www.instagram.com/unidades_uts/?hl=els-la"><i
+									class="fab fa-instagram-square"></i></a>
+						</li>
+						<li>
+							<a target="blank"
+								href="https://www.linkedin.com/company/unidades-tecnol%C3%B3gicas-de-santander/"><i
+									class="fab fa-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+	<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+	<script type="text/javascript" src="pano2vr_player.js">
+	</script>
+	<script type="text/javascript" src="skin.js">
+	</script>
+	<script src="webvr/three.min.js"></script>
+	<script src="webvr/webvr-polyfill.min.js"></script>
+	<div id="container" style="width:100%;height:87%;overflow:hidden;">
+		<br>Loading...<br><br>
+	</div>
+	<script type="text/javascript">
+
+		// create the panorama player with the container
+		pano = new pano2vrPlayer("container");
+		// add the skin object
+		skin = new pano2vrSkin(pano);
+		// load the configuration
+
+		window.addEventListener("load", function () {
+			pano.readConfigUrlAsync("pano.xml");
+		});
+	</script>
+	<noscript>
+		<p><b>Please enable Javascript!</b></p>
+	</noscript>
+	<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+	<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s -->
+	<div style="width:1px;height:1px;"></div>
+</body>
+
+</html>
